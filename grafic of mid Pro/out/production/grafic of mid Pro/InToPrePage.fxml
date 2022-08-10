@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InToPrePage">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="564.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/the_pic.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="47.0" text="Infix to Prefix">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="118.0" layoutY="104.0" prefHeight="17.0" prefWidth="85.0" text="enter an Infix : ">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="txt_IntoPre_in" layoutX="212.0" layoutY="100.0" />
+      <Button fx:id="btn_InToPre" layoutX="385.0" layoutY="100.0" mnemonicParsing="false" onAction="#press_btn_InToPre" text="Convert">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="124.0" layoutY="169.0" prefHeight="17.0" prefWidth="51.0" text="Output:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <TextArea fx:id="txt_InToPre_out" layoutX="194.0" layoutY="149.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btn_backToMenu" layoutX="75.0" layoutY="318.0" mnemonicParsing="false" onAction="#press_btn_backToMenu" prefHeight="25.0" prefWidth="100.0" text="back to menu">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

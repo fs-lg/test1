@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="387.0" prefWidth="562.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RecordsPage">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="556.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/download.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="25.0" prefHeight="17.0" prefWidth="99.0" text="Records">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="btn_UpToDown" layoutX="350.0" layoutY="67.0" mnemonicParsing="false" onAction="#press_btn_UpToDown" text="Up to Down">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_DownToUp" layoutX="350.0" layoutY="116.0" mnemonicParsing="false" onAction="#press_btn_DownToUp" text="Down to Up">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn_backToMenu" layoutX="350.0" layoutY="267.0" mnemonicParsing="false" onAction="#press_btn_backToMenu" text="back to Menu">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <TextArea fx:id="txt_res_records" layoutX="132.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
